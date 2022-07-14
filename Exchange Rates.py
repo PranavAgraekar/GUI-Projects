@@ -22,6 +22,9 @@ def getdet():
         b = (a[i])
         if b['name'] == clicked.get():
             messagebox.showinfo(0,b)
+            with open('details.txt','w+') as file:
+                file.write(str(b))
+
 
 
 label1 = Label(master,text= 'Enter the Currency ')
